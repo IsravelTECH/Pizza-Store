@@ -1,0 +1,16 @@
+
+<div class="container">
+    <h1>Edit Pizza</h1>
+    <form action="/pizzas/<%= pizza._id %>?_method=PUT" method="POST">
+        <label for="name">Pizza Name:</label>
+        <input type="text" name="name" id="name" value="<%= pizza.name %>" required>
+
+        <label for="price">Pizza Price:</label>
+        <input type="number" name="price" id="price" value="<%= pizza.price %>" required>
+
+        <label for="size">Pizza Size:</label>
+        <input type="text" name="size" id="size" value="<%= pizza.size %>" required>
+
+        <button type="submit">Update Pizza</button>
+    </form>
+</div>

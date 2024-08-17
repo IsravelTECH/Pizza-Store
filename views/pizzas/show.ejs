@@ -1,0 +1,11 @@
+
+<div class="container">
+    <h1><%= pizza.name %></h1>
+    <p>Price: $<%= pizza.price %></p>
+    <p>Size: <%= pizza.size %></p>
+    <a href="/pizzas/<%= pizza._id %>/edit">Edit Pizza</a>
+    <form action="/pizzas/<%= pizza._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete Pizza</button>
+    </form>
+    <a href="/pizzas">Back to Pizza List</a>
+</div>
